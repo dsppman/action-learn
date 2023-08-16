@@ -3,9 +3,6 @@ name: Extract stealth.min.js
 on:
   workflow_dispatch:
 
-env:
-  TZ: Asia/Shanghai
-
 jobs:
   build:
     runs-on: ubuntu-latest
