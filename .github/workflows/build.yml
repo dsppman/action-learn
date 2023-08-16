@@ -13,7 +13,7 @@ jobs:
       - name: Clone repository
         run: |
           git clone https://github.com/berstend/puppeteer-extra.git puppeteer-extra --depth=1
-          cd puppeteer-extra/puppeteer-extra
+          cd puppeteer-extra
       # - name: 'Fix for: error fsevents@2.1.2: The platform "linux" is incompatible with this module.'
       #   run: npx json -I -f package.json -e 'this.resolutions={}'
 
