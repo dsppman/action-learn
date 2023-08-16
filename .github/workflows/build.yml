@@ -18,7 +18,7 @@ jobs:
       - name: Build packages
         run: |
           cd puppeteer-extra
-          yarn install
+          yarn install --ignore-platform
           yarn bootstrap
           yarn build
 
