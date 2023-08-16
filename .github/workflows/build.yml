@@ -34,7 +34,12 @@ jobs:
         with:
           add: 'stealth.min.js'
           force: true
-          ref: 'master'
+          # ref: 'master'
           message: 'Auto-updated stealth.min.js with newest evasions'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: 'stealth.min.js'
+          path: 'stealth.min.js'
